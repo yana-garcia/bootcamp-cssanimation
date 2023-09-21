@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>CSS Animation</title>
+        <link rel="stylesheet" href="css/custom-style.css">
+        <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css"/>
+        <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+    </head>
+    <body>
+        <div class="custom-navbar-dark">
+            <a href="index.html">
+                <img src="assets/yg-light.png" class="site-logo" alt="">
+            </a>
+
+            <a href="index.html#menu-section">
+                <img src="assets/site-logo-light.png" class="menu-logo" alt="">
+            </a>
+        </div>
+        <div class="main-container">
+            <div class="ironman-bg" style="background: url(assets/avengers/avengers_300x250_bg.jpg);">
+                <img src="assets/avengers/avengers_300x250_ironman.png" class="ironman" />
+                <div class="social-icon">
+                    <img src="assets/avengers/avengers_300x250_social_twitter.png" id="mtwit" />
+                    <img src="assets/avengers/avengers_300x250_social_fb.png" id="mfb" />
+                    <img src="assets/avengers/avengers_300x250_social_yt.png" id="myt" />
+                </div>
+                <img src="assets/avengers/avengers_300x250_title.png" class="irontitle" />
+                <img src="assets/avengers/avengers_300x250_tt.png" class="avengers" />
+                <img src="assets/avengers/avengers_300x250_exp_button.png" class="logo" id="mlogo" />
+                <img src="assets/avengers/light.png" class="light" />
+            </div>
+            <div class="bx--row">
+                <div class="bx--col-lg-12">
+                    <button onclick="refreshavengers()" class="btnreplay"><b>REPLAY</b></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-footer">
+            <p>Roxelle Alianah Garcia &copy;</p>
+        </div>
+
+
+        <script>
+            function refreshavengers(){
+                location.reload();
+            }
+        </script>
+    </body>
+</html>

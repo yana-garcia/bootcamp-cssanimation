@@ -1,0 +1,191 @@
+<html>
+    <head>
+        <title>CSS Animation</title>
+        <link rel="stylesheet" href="css/custom-style.css">
+        <link rel="stylesheet" href="https://unpkg.com/carbon-components/css/carbon-components.min.css"/>
+        <link href='https://fonts.googleapis.com/css?family=IBM Plex Sans Condensed' rel='stylesheet'>
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="https://unpkg.com/carbon-components/scripts/carbon-components.min.js"></script>
+    </head>
+    <body>
+        <div class="custom-navbar-dark">
+            <a href="index.html">
+                <img src="assets/yg-light.png" class="site-logo" alt="">
+            </a>
+
+            <a href="index.html#menu-section">
+                <img src="assets/site-logo-light.png" class="menu-logo" alt="">
+            </a>
+        </div>
+        <div class="main-property-container">
+            <div class="bx--grid">
+                <div class="bx--row">
+                    <div class="bx--col-lg-12">
+                        <h1>Properties, Attributes, Examples</h1>
+                    </div>
+                </div>
+                <div class="bx--row">
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>@keyframes { }</h5>
+                            <br>
+                            <p>
+                                @keyframes [animation-name] {
+                                    from {
+
+                                    }
+                                    to {
+
+                                    }
+                                }
+                            </p>
+                            <p>
+                                @keyframes [animation-name] {
+                                    0% {
+
+                                    }
+                                    50% {
+
+                                    }
+                                    100% {
+
+                                    }
+                                }
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-name:</h5>
+                            <br>
+                            <p>@keyframes <strong>sample</strong> {}</p>
+                            <br>
+                            <p>animation-name: sample;</p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-duration:</h5>
+                            <br>
+                            <p>
+                                time (s/ms) = <strong>0</strong>
+                            </p>
+                            <br>
+                            <p>animation-duration: 5s;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bx--row">
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-delay:</h5>
+                            <br>
+                            <p>
+                                time (s/ms) = <strong>0</strong>
+                            </p>
+                            <br>
+                            <p>animation-delay: 3s;</p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-iteration-count:</h5>
+                            <br>
+                            <p>
+                                number = <strong>1</strong> | infinite
+                            </p>
+                            <br>
+                            <p>animation-iteration-count: infinite;</p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-direction:</h5>
+                            <br>
+                            <p>
+                                <strong>normal</strong> | reverse | alternate | alternate-reverse
+                            </p>
+                            <br>
+                            <p>animation-direction: alternate;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bx--row">
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-timing-function:</h5>
+                            <br>
+                            <p>
+                                linear | <strong>ease</strong> | ease-in | ease-out | ease-in-out
+                            </p>
+                            <br>
+                            <p>animation-timing-direction: linear;</p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-fill-mode:</h5>
+                            <br>
+                            <p>
+                                <strong>none</strong> | forwards | backwards | both
+                            </p>
+                            <br>
+                            <p>animation-fill-mode: forwards;</p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation-play-state:</h5>
+                            <br>
+                            <p>
+                                <strong>running</strong> | paused
+                            </p>
+                            <br>
+                            <p>animation-play-state: paused;</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bx--row">
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>animation:</h5>
+                            <br>
+                            <p>
+                                name_duration_timing-function_delay_iteration-count_direction_fill-mode_play-state
+                            </p>
+                            <br>
+                            <p>animation: sample 5s linear 1s infinite alternate forwards;</p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>stroke-dasharray:</h5>
+                            <br>
+                            <h5>stroke-dashoffset:</h5>
+                            <br>
+                            <p>
+                                stroke-dasharray: 100; <br>
+                                stroke-dashoffset: -100;
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bx--col-lg-4">
+                        <div class="property-container">
+                            <h5>transform: scale();</h5>
+                            <h5>transform: rotate();</h5>
+                            <br>
+                            <p>
+                                transform: scale(1); <br>
+                                transform: rotate(180deg);
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="custom-footer">
+            <p>Roxelle Alianah Garcia &copy;</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,532 @@
+/* Main CSS */
+body {
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'IBM Plex Sans';
+}
+
+.custom-navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    box-shadow: 3px 1px 2px #cccccc;
+    position: fixed;
+    z-index: 100;
+}
+
+.custom-navbar-dark {
+    width: 100%;
+    height: 60px;
+    background-color: #8C2222;
+    box-shadow: 3px 1px 2px #cccccc;
+    /* position: fixed; */
+    z-index: 100;
+}
+
+.site-logo {
+    width: 45px;
+    margin: 10px 20px;
+}
+
+.menu-logo {
+    float: right;
+    padding: 8px 20px;
+    width: 120px;
+}
+
+.main-site-header {
+    height: 100vh;
+    background: url('../assets/BG_Landing.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    background-attachment: fixed;
+}
+
+.site-header-content {
+    margin-top: 150px;
+    font-family: 'IBM Plex Sans';
+}
+
+.site-header-content h1 {
+    font-size: 70px;
+}
+
+.next-page-arrow {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+}
+
+.arrow-down {
+    fill: #ffffff;
+    opacity: 30%;
+}
+
+.next-page-label {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 70px;
+    opacity: 10%;
+}
+
+.next-page-wrapper:hover .arrow-down,
+.next-page-wrapper:hover .next-page-label {
+    opacity: 95%;
+}
+
+/* .arrow-down:hover .next-page-label {
+    opacity: 100%;
+} */
+
+.main-site-container {
+    font-family: 'IBM Plex Sans';
+    background-image: linear-gradient(#871F1E, #ffffff);
+}
+
+.menu-wrapper {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.div-menu {
+    width: 100%;
+    height: 200px;
+    background: #ffffff;
+    display: block;
+    margin: 10px auto;
+}
+
+.div-menu:hover {
+    /* border-radius: 20px; */
+    /* box-shadow: 2px 2px 6px 2px #faeaea; */
+    /* box-shadow: 2px 2px 6px 2px #4d0000; */
+    cursor: pointer;
+    /* background: #f6d6d5; */
+    background: #1a0000;
+}
+
+.div-menu:hover h2 {
+    color: #ffffff;
+}
+
+.div-menu:hover h4 {
+    opacity: 100%;
+    transition: 1s;
+    color: #ffffff;
+}
+
+.div-menu-content {
+    text-align: center;
+    padding-top: 50px;
+    color: #000000;
+    font-family: 'IBM Plex Sans';
+}
+
+a {
+    text-decoration: none;
+}
+
+.div-menu-content h4 {
+    opacity: 0%;
+}
+
+.custom-footer {
+    width: 100%;
+    background: #871F1E;
+    padding: 5px;
+    text-align: center;
+}
+
+.custom-footer-content {
+    position: absolute;
+    bottom: 0;
+}
+
+.custom-footer p {
+    font-size: 12px;
+    font-weight: lighter;
+    color: #ffffff;
+}
+
+/* CSS Properties */
+.main-property-container {
+    padding: 50px 20px;
+}
+
+.main-property-container h1 {
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.property-container {
+    width: 100%;
+    background: #d9d9d9;
+    height: 180px;
+    display: block;
+    margin: 15px auto;
+    padding: 20px;
+}
+
+.property-container p {
+    font-size: 14px;
+}
+/* CSS Properties ends */
+
+/* LS Dev Logo */
+#lsdev-logo {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.txt-ls {
+    stroke-dashoffset: -195;
+    stroke-dasharray: 195;
+    animation-name: txtls;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: -1s;
+    
+}
+
+.txt-dev {
+    stroke-dasharray: 120;
+    stroke-dashoffset: -120;
+    animation: txtdev 5s 1 forwards;
+    animation-delay: 1s;
+}
+
+.outline-logo {
+    stroke-dasharray: 296;
+    stroke-dashoffset: -296;
+    animation: lsdevoutline 5s 1 forwards;
+}
+
+@keyframes txtls {
+    from {
+        stroke-dashoffset: -195;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes txtdev {
+    from {
+        stroke-dashoffset: -120;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes lsdevoutline {
+    from {
+        stroke-dashoffset: -296;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+/* LS Dev logo ends */
+
+/* Social Icons Hover */
+#social-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.twitter-outline, .twitter-icon {
+    transform-box: fill-box;
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+.twitter-icon-group:hover .twitter-outline {
+    transform: scale(0);
+}
+.twitter-icon-group:hover .twitter-icon {
+    transform: scale(2);
+    stroke: #4099ff;
+    opacity: 0;
+}
+
+
+.youtube-icon, .youtube-outline, .youtube-inner-circle {
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+.youtube-icon-group:hover .youtube-outline {
+    transform: scale(1.2);
+}
+.youtube-icon-group:hover .youtube-inner-circle {
+    fill: #f26768;
+}
+.youtube-icon-group:hover .youtube-icon {
+    stroke: #ffffff;
+}
+
+
+.facebook-outline, .facebook-detail {
+    transform-box: fill-box;
+    transition: 300ms all;
+    transform-origin: 50% 50%;
+}
+.facebook-detail {
+    opacity: 0;
+}
+.facebook-icon-group:hover .facebook-outline {
+    transform: scale(1.8);
+    opacity: 0;
+}
+.facebook-icon-group:hover .facebook-detail {
+    opacity: 1;
+    transform: scale(0.8) rotate(180deg);
+}
+/* Social Icons Hover ends */
+
+/* Web Dev Logo */
+#webdev-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 50%;
+}
+
+#webdev-logo rect {
+    animation: webdevoutline 5s 1 forwards;
+    transform-origin: 50% 50%;
+    /* transform: scale(0); */
+}
+@keyframes webdevoutline {
+    0% {
+        transform: scale(0.1);
+    }
+    /* 50% {
+        transform: scale(1);
+        
+    } */
+    100% {
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+#webdev-logo line {
+    stroke-dasharray: 60;
+    stroke-dashoffset: -60;
+    animation: webdevline 4s 1 forwards;
+    animation-delay: 2s;
+}
+@keyframes webdevline {
+    from {
+        stroke-dashoffset: 60;
+    }
+    to {
+        stroke-dashoffset: -40;
+    }
+}
+
+#webdev-logo path {
+    opacity: 0;
+    animation: webdevtxt 5s 1 forwards;
+    animation-delay: 4s;
+}
+@keyframes webdevtxt {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Web Dev Logo ends */
+
+/* SVG Masking */
+.svg-experiment-container {
+    background: #000000;
+    display: block;
+    margin: auto;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    padding: 50px;
+    width: 60%;
+}
+
+#experiment-logo circle {
+    animation: 3s move alternate infinite;
+}
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(500px);
+    }
+}
+/* SVG Masking ends */
+
+/* Avengers GIF */
+.ironman-bg{
+	position:relative;
+    width: 300px;
+    height: 250px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    top: 100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+
+.ironman{
+	position:absolute;
+    top: 0;
+    right: 1;
+	animation: animironman 1s linear forwards;
+}
+@keyframes animironman {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+/* ------------------------------------------ */		
+.irontitle{
+	position:absolute;
+	opacity: 0;
+    top: 5;
+    right: -150;
+	animation: animtitle 0.5s linear forwards;
+	animation-delay: 1s;
+}
+@keyframes animtitle {
+    from {
+        top: 5;
+        right: -150;
+        opacity: 0;
+    }
+    to {
+        top: 5;
+        right: 5;
+        opacity: 1;
+    }
+}
+/* ------------------------------------------- */
+.social-icon {
+    position: absolute;
+    top: -15;
+    left: 5;
+    opacity: 0;
+    animation: avengersocial 1s linear forwards;
+}
+@keyframes avengersocial {
+    from {
+        top: -15;
+        left: 5;
+        opacity: 0;
+    }
+    to {
+        top: 5;
+        left: 5;
+        opacity: 1;
+    }
+}
+/* ------------------------------------------- */
+.avengers{
+	position:absolute;
+    left: -200;
+    bottom: -15;
+    opacity: 0;
+	animation: animavengers 1s linear forwards;
+	animation-delay: 1s;
+}
+@keyframes animavengers {
+    from {
+        left: -200;
+        bottom: -15;
+        opacity: 0;
+    }
+    to {
+        left: 0;
+        bottom: -15;
+        opacity: 1;
+    }
+}
+/* ------------------------------------------ */
+.logo{
+	position: absolute;
+	bottom: 1;
+    right: 1;
+    opacity: 0;
+	animation: animlogo 0.5s linear forwards;
+	animation-delay: 1.3s;
+}
+@keyframes animlogo {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* ------------------------------------------ */			
+.btnreplay {
+    background-color: white;
+    color: black;
+    border: 2px solid #b30000;
+	border-radius: 10px;
+	height: 40px;
+	width: 100px;
+    display: block;
+    margin: 120px auto;
+    cursor: pointer;
+}
+
+.btnreplay:hover {
+    background-color: #b30000;
+	color:white;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* ------------------------------------------ */			
+.light{
+	position: absolute;
+	height:380px;
+	width:420px;
+	opacity:0.5;
+    top: -65;
+    right: -50;
+	animation: animlight 1s linear forwards;
+}
+@keyframes animlight {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+/* Avengers GIF ends */
