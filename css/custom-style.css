@@ -49,7 +49,11 @@ body {
 }
 
 .site-header-content h1 {
-    font-size: 70px;
+    font-size: 100px;
+}
+
+.site-header-content p {
+    font-size: 25px;
 }
 
 .next-page-arrow {
